@@ -1,0 +1,3 @@
+mode: set
+teste-avancado/formas/formas.go:16.35,18.2 1 1
+teste-avancado/formas/formas.go:24.33,26.2 1 1

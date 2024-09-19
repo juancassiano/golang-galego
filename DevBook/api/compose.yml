@@ -1,0 +1,13 @@
+services:
+  db:
+    image: mysql:8.0.30-debian
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_ROOT_PASSWORD: ""
+      MYSQL_USER: "golang"
+      MYSQL_PASSWORD: "golang"
+      MYSQL_DATABASE: "devbook"
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./.docker/mysql:/docker-entrypoint-initdb.d
